@@ -15,7 +15,7 @@
 # digits are the state code. I placed these into a .csv called
 # state_codes_swade.csv
 #
-# All the supporting code, e.g. download_data.R is available on 
+# download_data.R and state_codes_swade.csv are available on
 # https://www.github.com/stephematician/exploratorycoursera
 
 library(ggplot2)
@@ -67,7 +67,7 @@ g + geom_smooth(metho="lm",
                ncol=8,
                scales="free") +
     theme_bw() +
-    theme(axis.ticks = element_blank(), axis.text.x = element_blank())# +
+    theme(axis.ticks = element_blank(), axis.text.x = element_blank()) +
     labs(x=NULL,
          title="Emissions from coal burning by state and USA total")
 

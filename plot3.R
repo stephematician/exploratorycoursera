@@ -1,4 +1,4 @@
-## Course project for Exploratory Data Analysis - plot5
+## Course project for Exploratory Data Analysis - plot3
 # Author: Stephen Wade
 # Date: 26/07/2015
 #
@@ -7,6 +7,9 @@
 #
 # For this I chose to use a simply point + linear regression plot to demonstrate
 # if there is any trend in the observed total pm2.5 measurements
+#
+# download_data.R is available on
+# https://www.github.com/stephematician/exploratorycoursera
 
 library(ggplot2)
 library(dplyr)
@@ -38,6 +41,7 @@ g + geom_smooth(metho="lm",
                ncol=2,
                scales="free") +
     theme_bw() +
+    scale_x_continuous(breaks=unique(final_totals$year)) +
     labs(x=NULL,
          title="Total emissions for Baltimore City by type of source")
 

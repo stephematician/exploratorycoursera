@@ -11,6 +11,10 @@
 # variance over the years.
 #
 # The number of observations is also clearly growing with time.
+#
+# download_data.R are available on
+# https://www.github.com/stephematician/exploratorycoursera
+
 
 library(dplyr)
 
